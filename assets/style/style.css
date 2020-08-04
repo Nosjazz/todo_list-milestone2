@@ -14,6 +14,8 @@ body {
     min-height: 100vh;
 }
 
+
+ /********************** header ************/
 .header {
     font-size: 1.5rem;
 }
@@ -43,27 +45,6 @@ form button {
 form button:hover {
     background: #5339c5;
     color: white;
-}
-
-#list {
-    min-width: 30%;
-}
-
-#item {
-    margin: 1rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-#item li {
-    flex: 1;
-}
-
-.text {
-    background: white;
-    color: black;   
-    min-width: 50%;
-    text-align: center;
 }
 
 
@@ -98,4 +79,38 @@ select {
 .select:hover::after {
     background: white;
     color: #5339c5;
+}
+
+.clear {
+    position: absolute;
+    top: 0;
+    padding-left: 80%
+}
+
+#date {
+    position: absolute;
+    bottom: 0;
+}
+
+ /********************** To Dos ************/
+
+#list {
+    min-width: 30%;
+}
+
+#item {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#item li {
+    flex: 1;
+}
+
+.text {
+    background: white;
+    color: black;   
+    min-width: 50%;
+    text-align: center;
 }
