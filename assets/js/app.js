@@ -41,5 +41,6 @@ document.addEventListener("keyup", function(event) {
         if (toDo) {
             addToDo(toDo); 
         }
+        input.value ="";
     }
 });
