@@ -21,28 +21,28 @@ body {
 }
 
 .header,
-form {
+.add-item {
     min-height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-form input, form button {
+input, .todo-button {
     padding: 0.5rem;
     font-size: 2rem;
     border: none;
     background-color: white;
 }
 
-form button {
+button {
     color: #5339c5;
     background: white;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-form button:hover {
+button:hover {
     background: #5339c5;
     color: white;
 }
@@ -98,13 +98,13 @@ select {
     min-width: 30%;
 }
 
-#item {
+.item {
     margin: 1rem;
     display: flex;
     justify-content: space-between;
 }
 
-#item li {
+.item li {
     flex: 1;
 }
 
