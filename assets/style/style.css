@@ -54,8 +54,8 @@ select {
     appearance: none;
     outline: none;
     border: none;
-    color: #5339c5;
-    width: 10rem;
+    color: hsl(251, 55%, 50%);
+    width: 12rem;
     cursor: pointer;
     padding: 1rem;
 }
