@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-* {
+*, p {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -99,7 +99,7 @@ select {
 }
 
 .item {
-    margin: 1rem;
+    margin: 0.5rem;
     display: flex;
     justify-content: space-between;
 }
@@ -108,11 +108,21 @@ select {
     flex: 1;
 }
 
+.item i {
+    background: #5339c5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+}
+
 .text {
     background: white;
     color: black;   
-    min-width: 50%;
+    min-width: 75%;
     text-align: center;
+    line-height: 3rem;
+    font-size: 2rem;
 }
 
 .linethrough {

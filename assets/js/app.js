@@ -28,7 +28,7 @@ function addToDo(toDo, id, done, trash) {
     const LINE = done ? LINE_THROUGH : "";
 
     const text = 
-                 `<li class="item">
+                 `<li class="item ">
                     <i class="fa ${DONE}" job="complete id="${id}"></i>
                     <p class="text ${LINE}"> ${toDo}</p>
                     <i class="fa fa-trash-o" job="delete id="${id}"></i>
