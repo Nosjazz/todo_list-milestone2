@@ -9,6 +9,9 @@ const CHECK ="fa-check-circle";
 const UNCHECK = "fa-circle-thin";
 const LINE_THROUGH = "linethrough";
 
+let LIST = []
+,    id = 0 ;
+
 /*************** DATE */   
 let options = {weekday:"long", month:"short", day:"numeric"};
 let today = new Date();
@@ -26,9 +29,9 @@ function addToDo(toDo, id, done, trash) {
 
     const text = 
                  `<li class="item">
-                    <i class="fa fa-circle-thin job="complete"></i>
-                    <p class="text"> ${toDo}</p>
-                    <i class="fa fa-trash-o" job="delete"></i>
+                    <i class="fa ${DONE}" job="complete id="${id}"></i>
+                    <p class="text ${LINE}"> ${toDo}</p>
+                    <i class="fa fa-trash-o" job="delete id="${id}"></i>
                 </li>`;
     const position ="beforeend";
 
@@ -39,8 +42,18 @@ document.addEventListener("keyup", function(event) {
     if(event.keyCode == 13 ) {
         const toDo = input.value;
         if (toDo) {
-            addToDo(toDo); 
+            addToDo(toDo, id, false, false); 
+
+            LIST.push ({
+                name : toDo,
+                id: id,
+                done: false,
+                trash: false
+            });
+            id++;
         }
         input.value ="";
     }
 });
+
+addToDo("Coffee",1, true, false);
