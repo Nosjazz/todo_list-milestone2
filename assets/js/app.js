@@ -27,11 +27,10 @@ function addToDo(toDo, id, done, trash) {
     const DONE = done ? CHECK : UNCHECK;
     const LINE = done ? LINE_THROUGH : "";
 
-    const text = 
-                 `<li class="item ">
-                    <i class="fa ${DONE} ${LINE}" job="complete id="${id}"></i>
+    const text = `<li class="item">
+                    <i class="fa ${DONE} ${LINE}" job="complete" id="${id}"></i>
                     <p class="text ${LINE}"> ${toDo}</p>
-                    <i class="fa fa-trash-o" job="delete id="${id}"></i>
+                    <i class="fa fa-trash-o" job="delete" id="${id}"></i>
                 </li>`;
     const position ="beforeend";
 
@@ -57,3 +56,34 @@ document.addEventListener("keyup", function(event) {
 });
 
 addToDo("Coffee",1, true, false);
+
+/*************** Complete to do */
+
+function completeToDo(element) {
+    element.classList.toggle(CHECK);
+    element.classList.toggle(UNCHECK);    
+    element.parentNode.querySelector(".text").classList.toggle(LINE_THROUGH);
+
+    LIST[element.id].done = LIST[element.id].done ? false : true ;
+}
+
+/**************** Remove to do */
+
+function removeToDo(element) {
+    element.parentNode.parentNode.removeChild(element.parentNode);
+
+    LIST[element.id].trash = true;
+}
+
+/**************** targeter */
+
+list.addEventListener("click", function (event){
+    const element = event.target;
+    const elementJob = element.attributes.job.value;
+
+    if(elementJob == "complete") {
+        completeToDo(element);
+    }else if (elementJob == "delete"){
+            removeToDo(element);
+    }
+});
