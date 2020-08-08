@@ -6,18 +6,15 @@ Welcome Nosjazz
 
 ## bugs
 
-ensure submit button submit
-
 improve Title, todo and refresh.hover CSS
 
 Have date bottom header rather than absolute bottom
 
-add week number?
 
 ## future
 
-Create clickable <i> for done and trash
-
-Create CSS class when item is checked
-
 Create filtering classes
+
+add week number?
+
+create daily, weekly, monthly divs
