@@ -55,8 +55,6 @@ document.addEventListener("keyup", function(event) {
     }
 });
 
-addToDo("Coffee",1, true, false);
-
 /*************** Complete to do */
 
 function completeToDo(element) {
