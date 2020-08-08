@@ -1,9 +1,10 @@
-
 /*********** Select the Elements */
 const dateElement = document.getElementById("date");
 const list = document.getElementById("list");
 const input = document.querySelector(".todo-input");
 const clear = document.querySelector(".clear")
+const add = document.querySelector(".todo-button")
+
 
 const CHECK ="fa-check-circle";
 const UNCHECK = "fa-circle-thin";
@@ -53,6 +54,22 @@ document.addEventListener("keyup", function(event) {
         }
         input.value ="";
     }
+});
+
+add.addEventListener("click", function(event){
+    const toDo = input.value;
+    if (toDo) {
+        addToDo(toDo, id, false, false); 
+
+        LIST.push ({
+            name : toDo,
+            id: id,
+            done: false,
+            trash: false
+        });
+        id++;
+    }
+    input.value ="";
 });
 
 /*************** Complete to do */
