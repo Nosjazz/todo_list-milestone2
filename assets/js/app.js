@@ -10,8 +10,26 @@ const CHECK ="fa-check-circle";
 const UNCHECK = "fa-circle-thin";
 const LINE_THROUGH = "linethrough";
 
-let LIST = []
-,    id = 0 ;
+let LIST, id;
+
+/**************** Local storage */
+let data = localStorage.getItem("TODO");
+
+if(data){
+    LIST = JSON.parse(data);
+    id = LIST.length; // set the id to the last one in the list
+    loadList(LIST); // load the list to the user interface
+}else{
+    // if data isn't empty
+    LIST = [];
+    id = 0;
+}
+
+function loadList(array){
+    array.forEach(function(item){
+        addToDo(item.name, item.id, item.done, item.trash);
+    });
+}
 
 /*************** DATE */   
 let options = {weekday:"long", month:"short", day:"numeric"};
@@ -50,6 +68,9 @@ document.addEventListener("keyup", function(event) {
                 done: false,
                 trash: false
             });
+
+            localStorage.setItem("TODO", JSON.stringify(LIST));
+
             id++;
         }
         input.value ="";
@@ -67,6 +88,9 @@ add.addEventListener("click", function(event){
             done: false,
             trash: false
         });
+
+        localStorage.setItem("TODO", JSON.stringify(LIST));
+
         id++;
     }
     input.value ="";
@@ -99,6 +123,10 @@ list.addEventListener("click", function (event){
     if(elementJob == "complete") {
         completeToDo(element);
     }else if (elementJob == "delete"){
-            removeToDo(element);
+        removeToDo(element);
     }
+    localStorage.setItem("TODO", JSON.stringify(LIST));
+
 });
+
+
