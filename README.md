@@ -10,6 +10,8 @@ improve Title, todo and refresh.hover CSS
 
 Have date bottom header rather than absolute bottom
 
+completed opacity is changed when loading from local storage but not with current session and does not reverse
+
 
 ## future
 
