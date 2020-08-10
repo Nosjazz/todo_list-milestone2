@@ -129,3 +129,10 @@ function loadList(array){
         addToDo(item.name, item.id, item.done, item.trash);
     });
 }
+
+/**************** Clear Local storage  */
+
+clear.addEventListener("click", function() {
+    localStorage.clear();
+    location.reload();
+});
