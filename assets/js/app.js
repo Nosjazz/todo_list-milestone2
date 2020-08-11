@@ -2,8 +2,9 @@
 const dateElement = document.getElementById("date");
 const list = document.getElementById("list");
 const input = document.querySelector(".todo-input");
-const clear = document.querySelector(".clear")
-const add = document.querySelector(".todo-button")
+const clear = document.querySelector(".clear");
+const add = document.querySelector(".todo-button");
+const filter = document.querySelector(".filter-todo");
 
 
 const CHECK ="fa-check-circle";
@@ -19,6 +20,36 @@ let today = new Date();
 
 dateElement.innerHTML = today.toLocaleDateString("en-US", options);
 
+/**************** Filter  */
+
+filter.addEventListener("click", filterTodo);
+
+function filterTodo(event) {
+    const todos = list.childNodes;
+
+    todos.forEach(function(todo) {
+        switch(event.target.value){
+            case "all":
+                todo.style.display = "flex";
+                break;
+            case "completed":
+                if(todo.classList.contains("completed")){
+                    todo.style.display = "flex";
+                }else {
+                    todo.style.display = "none";
+                }
+                break;
+            case "uncompleted":
+                if(!todo.classList.contains("completed")) {
+                    if(todo.classList.contains("completed")){
+                    todo.style.display = "flex";
+                } else {
+                    todo.style.display = "none";
+                }
+                break;        
+        } 
+    });
+}
 
 /**************** Add to do */
 function addToDo(toDo, id, done, trash) {
