@@ -10,6 +10,7 @@ const filter = document.querySelector(".filter-todo");
 const CHECK ="fa-check-circle";
 const UNCHECK = "fa-circle-thin";
 const LINE_THROUGH = "linethrough";
+const COMPLETED = "completed"
 
 let LIST = [],
 id = 0;
@@ -25,26 +26,26 @@ dateElement.innerHTML = today.toLocaleDateString("en-US", options);
 filter.addEventListener("click", filterTodo);
 
 function filterTodo(event) {
-    const todos = list.childNodes;
+    const item = document.querySelectorAll(".item");       
 
-    todos.forEach(function(todo) {
+    console.log(item);
+    item.forEach(function(i) {
         switch(event.target.value){
             case "all":
-                todo.style.display = "flex";
+                i.style.display = "flex";
                 break;
             case "completed":
-                if(todo.classList.contains("completed")){
-                    todo.style.display = "flex";
+                if(i.classList.contains("completed")){
+                    i.style.display = "flex";
                 }else {
-                    todo.style.display = "none";
+                    i.style.display = "none";
                 }
                 break;
             case "uncompleted":
-                if(!todo.classList.contains("completed")) {
-                    if(todo.classList.contains("completed")){
-                    todo.style.display = "flex";
+                if(!i.classList.contains("completed")) {
+                    i.style.display = "flex";
                 } else {
-                    todo.style.display = "none";
+                    i.style.display = "none";
                 }
                 break;        
         } 
@@ -58,8 +59,9 @@ function addToDo(toDo, id, done, trash) {
 
     const DONE = done ? CHECK : UNCHECK;
     const LINE = done ? LINE_THROUGH : "";
+    const COMP = done ? COMPLETED : "";
 
-    const text = `<li class="item">
+    const text = `<li class="item ${COMP}">
                     <i class="fa ${DONE}" job="complete" id="${id}"></i>
                     <p class="text ${LINE}"> ${toDo}</p>
                     <i class="fa fa-trash-o" job="delete" id="${id}"></i>
@@ -115,6 +117,7 @@ function completeToDo(element) {
     element.classList.toggle(CHECK);
     element.classList.toggle(UNCHECK);    
     element.parentNode.querySelector(".text").classList.toggle(LINE_THROUGH);
+    element.parentNode.classList.toggle(COMPLETED);
 
     LIST[element.id].done = LIST[element.id].done ? false : true ;
 }
