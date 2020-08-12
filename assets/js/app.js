@@ -28,7 +28,6 @@ filter.addEventListener("click", filterTodo);
 function filterTodo(event) {
     const item = document.querySelectorAll(".item");       
 
-    console.log(item);
     item.forEach(function(i) {
         switch(event.target.value){
             case "all":
