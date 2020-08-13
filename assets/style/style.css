@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -37,7 +38,7 @@ body {
 
 .header,
 .add-item {
-    min-height: 20vh;
+    min-height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,8 +104,8 @@ select {
 }
 
 #date {
-    position: absolute;
-    bottom: 0;
+    font-size: 1.5rem;
+    color: black;
 }
 
  /********************** To Dos ************/
@@ -113,6 +114,10 @@ select {
     min-width: 30%;
 }
 
+.rembot2 {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
 .item {
     margin: 0.5rem;
     display: flex;
