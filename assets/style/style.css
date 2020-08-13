@@ -91,6 +91,7 @@ select {
     right: 0;
     padding: 1rem;
     pointer-events: none;
+    transition: all 0.3s ease;
 }
 
 .select:hover::after {
