@@ -124,16 +124,13 @@ select {
     justify-content: space-between;
 }
 
-.item li {
-    flex: 1;
-}
-
 .item i {
     background: #5339c5;
     color: white;
     border: none;
     cursor: pointer;
     padding: 1rem;
+    float: right;
 }
 
 .text {
