@@ -29,6 +29,7 @@ body {
 }
 
 .fa-refresh:hover{
+    transition: all 0.7s ease;
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
@@ -131,6 +132,12 @@ select {
     cursor: pointer;
     padding: 1rem;
     float: right;
+}
+
+.item i:hover {
+    transition: all 0.7s ease;
+    background: white;
+    color: #5339c5;
 }
 
 .text {
