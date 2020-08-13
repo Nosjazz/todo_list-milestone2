@@ -17,6 +17,10 @@ body {
 
 .center {
     text-align: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
  /********************** header ************/
@@ -50,6 +54,10 @@ input, .todo-button {
     font-size: 2rem;
     border: none;
     background-color: white;
+}
+
+.todo-input {
+    max-width: 75%;
 }
 
 button {
@@ -123,7 +131,7 @@ select {
 .item {
     margin: 0.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .item i {
@@ -148,6 +156,7 @@ select {
     text-align: center;
     line-height: 3rem;
     font-size: 2rem;
+    margin-right: 2rem;
 }
 
 .linethrough {
