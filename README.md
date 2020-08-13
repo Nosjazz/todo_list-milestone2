@@ -6,17 +6,16 @@ Welcome Nosjazz
 
 ## bugs
 
-improve Title, todo and refresh.hover CSS
-
-Have date bottom header rather than absolute bottom
+Check font family
 
 completed opacity is changed when loading from local storage but not with current session and does not reverse
 
+Scrolling issue?
 
-## future
+Max min width items
 
-Create filtering classes
+### Mobile
+Icon remain middle for several lines
 
-add week number?
+filter remain
 
-create daily, weekly, monthly divs
