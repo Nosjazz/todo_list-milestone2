@@ -170,3 +170,6 @@ clear.addEventListener("click", function() {
     localStorage.clear();
     location.reload();
 });
+
+
+/***************** Empty text */

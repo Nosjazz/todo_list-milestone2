@@ -24,6 +24,10 @@ body {
     align-items: center;
 }
 
+.display {
+    display:none;
+}
+
  /********************** header ************/
 .header {
     font-size: 1.5rem;
@@ -135,6 +139,7 @@ select {
     justify-content: center;
 }
 
+
 .item i {
     background: #5339c5;
     color: white;
@@ -163,9 +168,11 @@ select {
     text-align: center;
     line-height: 3rem;
     font-size: 1.5rem;
+    transition: all 0.25s ease;    
 }
 
 .linethrough {
     text-decoration: line-through;
     opacity: 0.5;
 }
+
