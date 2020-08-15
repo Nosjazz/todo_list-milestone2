@@ -67,7 +67,7 @@ function addToDo(toDo, id, done, trash) {
                 </li>`;
     const position ="beforeend";
 
-    list_todo.insertAdjacentHTML(position, text);
+    list.insertAdjacentHTML(position, text);
 }
  
 document.addEventListener("keyup", function(event) {
