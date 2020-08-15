@@ -50,6 +50,10 @@ body {
     align-items: center;
 }
 
+.item-bar {
+    display: flex;
+}
+
 @media only screen and (max-width: 740px) {
     .add-item {
         display: block;
