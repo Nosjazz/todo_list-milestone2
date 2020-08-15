@@ -115,10 +115,11 @@ add.addEventListener("click", function(event){
 function completeToDo(element) {
     element.classList.toggle(CHECK);
     element.classList.toggle(UNCHECK);    
-    element.parentNode.classList.toggle(LINE_THROUGH);
+    element.parentNode.querySelector(".text").classList.toggle(LINE_THROUGH);
     element.parentNode.classList.toggle(COMPLETED);
 
     LIST[element.id].done = LIST[element.id].done ? false : true ;
+    
 }
 
 /**************** Remove to do */

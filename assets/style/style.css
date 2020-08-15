@@ -150,6 +150,11 @@ select {
     color: #5339c5;
 }
 
+.item i:hover::after {
+    background: #5339c5;
+    color: white;
+}
+
 .text {
     background: white;
     color: black; 
