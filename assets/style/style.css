@@ -24,10 +24,6 @@ body {
     align-items: center;
 }
 
-.display {
-    display:none;
-}
-
  /********************** header ************/
 .header {
     font-size: 1.5rem;
@@ -52,6 +48,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 740px) {
+    .add-item {
+        display: block;
+        text-align: center;        
+    }
+    .select, .item-bar {
+        display: inline-block;
+    }
 }
 
 input, .todo-button {
