@@ -22,6 +22,7 @@ body {
     justify-content: center;
     align-content: center;
     align-items: center;
+    vertical-align: middle;
 }
 
  /********************** header ************/
@@ -63,6 +64,9 @@ body {
     }
     .select, .item-bar{
         display: inline-block;
+    }
+    .todo-button {
+    margin-left: -4px;
     }
 }
 
