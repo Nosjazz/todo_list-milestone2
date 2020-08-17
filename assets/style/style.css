@@ -203,7 +203,7 @@ select {
 }
 
 .fall {
-    transform: scaleX(0.5);
+    transform: scaleX(0.5) scaleY(0.5);
     transition: all 0.25s ease;    
     opacity: 0;
 }
