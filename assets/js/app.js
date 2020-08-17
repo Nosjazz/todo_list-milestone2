@@ -60,8 +60,8 @@ function addToDo(toDo, id, done, trash) {
     const LINE = done ? LINE_THROUGH : "";
     const COMP = done ? COMPLETED : "";
 
-    const text = `<li class="item ${COMP}">
-                    <div class="item-todos">
+    const text = `<li class="item ">
+                    <div class="item-todos ${COMP}">
                         <p class="text ${LINE}"> ${toDo}</p>
                         <i class="fa ${DONE}" job="complete" id="${id}"></i>
                         <i class="fa fa-trash-o" job="delete" id="${id}"></i>
