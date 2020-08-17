@@ -125,8 +125,10 @@ function completeToDo(element) {
 /**************** Remove to do */
 
 function removeToDo(element) {
-    element.parentNode.parentNode.removeChild(element.parentNode);
-
+    element.parentNode.classList.add("fall"); 
+    element.parentNode.addEventListener("transitionend", function () { 
+        element.parentNode.parentNode.removeChild(element.parentNode);
+    })
     LIST[element.id].trash = true;
 }
 
@@ -139,10 +141,8 @@ list.addEventListener("click", function (event){
     if(elementJob == "complete") {
         completeToDo(element);
     }else if (elementJob == "delete"){
-        element.parentNode.classList.add("fall"); 
-        element.parentNode.addEventListener("transitionend", function () { 
         removeToDo(element);     
-    })}
+    }
     localStorage.setItem("TODO", JSON.stringify(LIST));
 });
 
