@@ -197,3 +197,8 @@ select {
     opacity: 0.5;
 }
 
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    transition: all 0.25s ease;    
+    opacity: 0;
+}

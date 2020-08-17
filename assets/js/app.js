@@ -139,8 +139,10 @@ list.addEventListener("click", function (event){
     if(elementJob == "complete") {
         completeToDo(element);
     }else if (elementJob == "delete"){
-        removeToDo(element);
-    }
+        element.parentNode.classList.add("fall"); 
+        element.parentNode.addEventListener("transitionend", function () { 
+        removeToDo(element);     
+    })}
     localStorage.setItem("TODO", JSON.stringify(LIST));
 });
 
