@@ -6,9 +6,12 @@
     box-sizing: border-box;
     list-style: none;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
-    overflow: hidden;
+    overflow: auto;
 }
 
+h2, i::after, i::before, .fa::after, li, .fall::after, .fall, .fall::before {
+    overflow: hidden;
+}
 
 body {
     background-image: linear-gradient(120deg, #65f685, #5339c5);
@@ -33,7 +36,8 @@ body {
 
 .fa-refresh {
     cursor: pointer;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin: 1rem;
 }
 
 .fa-refresh:hover{
@@ -199,7 +203,7 @@ select {
 }
 
 .fall {
-    transform: translateY(8rem) rotateZ(20deg);
+    transform: scaleX(0.5);
     transition: all 0.25s ease;    
     opacity: 0;
 }
