@@ -169,10 +169,8 @@ select {
     padding: 1rem;
     float: right;
     font-size: 2rem;
-}
-
-.item i::before {
     vertical-align: middle;
+    
 }
 
 .item i:hover {
@@ -199,6 +197,9 @@ select {
 
 .linethrough {
     text-decoration: line-through;
+}
+
+.completed {
     opacity: 0.5;
 }
 
@@ -206,4 +207,10 @@ select {
     transform: scaleX(0.5) scaleY(0.5);
     transition: all 0.25s ease;    
     opacity: 0;
+}
+
+.item-todos {
+    display: flex;
+    min-width: 100%;
+    justify-content: center;
 }
