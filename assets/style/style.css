@@ -192,7 +192,6 @@ select {
     text-align: center;
     line-height: 3rem;
     font-size: 2rem;
-    transition: all 0.25s ease;    
 }
 
 .linethrough {
@@ -201,6 +200,7 @@ select {
 
 .completed {
     opacity: 0.5;
+    transition: all 0.5s ease;        
 }
 
 .fall {
