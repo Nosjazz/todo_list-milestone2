@@ -26,7 +26,7 @@ dateElement.innerHTML = today.toLocaleDateString("en-US", options);
 filter.addEventListener("click", filterTodo);
 
 function filterTodo(event) {
-    const item = document.querySelectorAll(".item");       
+    const item = document.querySelectorAll(".item-todos");       
 
     item.forEach(function(i) {
         switch(event.target.value){
