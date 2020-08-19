@@ -141,6 +141,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   On Internet Explorer Browsers, the site is not functional
 -   When the item contains several lines, the icons are not aligned middle
+-   When clicking on the List element, having unkown error in the console.
+-   When deleted a todo element, having an error in the console.
 
 ## Deployment
 
