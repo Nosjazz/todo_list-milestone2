@@ -80,13 +80,19 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     1. As a First Time Visitor, I want to easily understand the main purpose of the application and learn more about the organisation and feature.
 
         1. Upon entering the website, the user is invited to add an item with the placeholder
+        <img src="./assets/pictures/placeholder.JPG">
         2. When hovering into the + button next to the add item, their is a visual clue that indicate to the visitor the function to add an item is by clicking this button
+        <img src="./assets/pictures/add_hover.JPG">
         3. Once the first item is added, the 2 buttons next to the item have the same visual to create consistancy to the user
+        <img src="./assets/pictures/item_hover_done.JPG">
+        <img src="./assets/pictures/item_trash_done.JPG">
         4. When the user complete a task, the opacity is reduce and the text is barred
+        <img src="./assets/pictures/item_completed_ok.JPG">
 
     2. As a First Time Visitor, I want to be see a visually compellent design and animations.
 
         1. The design is left simple without image in the background and a simple gradient with cold colours to ease strain on the eyes
+        <img src="./assets/pictures/gradient.JPG">
         2. The different actionnable item has the color of the end gradient to keep consistency for the user
         3. Each actionable item has an hover effect and transition 
             a. Transition of height and width when deleting item
@@ -104,6 +110,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     2. As a Returning Visitor, I want to find a way to filter between ongoing and completed activities.
 
         1. The filter option allows the visitor to show all items, completed , or uncompleted ones
+        <img src="./assets/pictures/filter.JPG">
 
 -   #### Frequent User Goals
 
@@ -132,11 +139,10 @@ The project was deployed to GitHub Pages using the following steps...
 
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/Nosjazz/todo_list-milestone2)
 2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
 3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
 4. Under "Source", click the dropdown called "None" and select "Master Branch".
 5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
+6. Scroll back down through the page to locate the now published site in the "GitHub Pages" section.
 
 ### Forking the GitHub Repository
 
