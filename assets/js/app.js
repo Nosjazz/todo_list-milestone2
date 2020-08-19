@@ -2,7 +2,7 @@
 const dateElement = document.getElementById("date");
 const list = document.getElementById("list");
 const input = document.querySelector(".todo-input");
-const clear = document.querySelector(".clear");
+const clear = document.querySelector(".fa-refresh");
 const add = document.querySelector(".todo-button");
 const filter = document.querySelector(".filter-todo");
 
