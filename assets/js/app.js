@@ -73,6 +73,7 @@ function addToDo(toDo, id, done, trash) {
     list.insertAdjacentHTML(position, text);
 }
  
+/*************** Add input pressing enter */
 document.addEventListener("keyup", function(event) {
     if(event.keyCode == 13 ) {
         const toDo = input.value;
@@ -94,6 +95,7 @@ document.addEventListener("keyup", function(event) {
     }
 });
 
+/*************** Add input clicking on the button */
 add.addEventListener("click", function(event){
     const toDo = input.value;
     if (toDo) {
@@ -176,5 +178,3 @@ clear.addEventListener("click", function() {
     location.reload();
 });
 
-
-/***************** Empty text */
