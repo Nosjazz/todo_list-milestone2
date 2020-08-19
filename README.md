@@ -34,7 +34,7 @@ This website has been created in order to complete the 2nd milestone project of 
 
 *   ### Wireframes
 
-    -   Home Page Wireframe - see Assets/pictures/wireframe.jpg. Due to time contraints, the project was adaptated to conserve the minimum features, removing the weekly and monthly tracking and the second filtre by date.
+    -   Home Page [Wireframe](https://github.com/Nosjazz/todo_list-milestone2/blob/master/assets/pictures/wireframe.jpg). Due to time contraints, the project was adaptated to conserve the minimum features, removing the weekly and monthly tracking and the second filtre by date.
 
 ## Features
 
@@ -127,7 +127,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Known Bugs
 
--   On Internet Explorer Browsers, the site is not functionnal
+-   On Internet Explorer Browsers, the site is not functional
 -   When the item contains several lines, the icons are not aligned middle
 -   The refresh action is launched when clicking on the div, not solely on clicking on the icon.
 
