@@ -3,8 +3,10 @@
 [View the live project here.](https://nosjazz.github.io/todo_list-milestone2/index.html)
 
 This website has been created in order to complete the 2nd milestone project of the code institute fullstack diploma. This is a todo list with simple feature for day-to-day activities, excluding longer term goals such as weekly, monthly, etc with local storage to ensure tracking along the day.
-
+<h2 align="center">Desktop View</h2>
 <h2 align="center"><img src="./assets/pictures/list_readme_overview.JPG"></h2>
+<h2 align="center">Mobile View</h2>
+<h2 align="center"><img src="./assets/pictures/preview_mobile.JPG"></h2>
 
 ## User Experience (UX)
 
@@ -41,6 +43,16 @@ This website has been created in order to complete the 2nd milestone project of 
 -   Responsive on all device sizes
 
 -   Interactive elements
+
+-   Add items
+
+-   Filter items by All, Completed, uncompleted
+
+-   Complete items
+
+-   Trash items
+
+-   Refresh all items
 
 ## Technologies Used
 
@@ -129,7 +141,6 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   On Internet Explorer Browsers, the site is not functional
 -   When the item contains several lines, the icons are not aligned middle
--   The refresh action is launched when clicking on the div, not solely on clicking on the icon.
 
 ## Deployment
 
@@ -162,13 +173,13 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 6. Type `git clone`, and then paste the URL you copied in Step 3.
 
 ```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+$ git clone https://github.com/Nosjazz/todo_list-milestone2
 ```
 
 7. Press Enter. Your local clone will be created.
 
 ```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+$ git clone https://github.com/Nosjazz/todo_list-milestone2
 > Cloning into `CI-Clone`...
 > remote: Counting objects: 10, done.
 > remote: Compressing objects: 100% (8/8), done.
